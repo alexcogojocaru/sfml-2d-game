@@ -1,0 +1,3 @@
+D:/sfml-2d/out/build/x64-Release/CMakeFiles/sfml-2d.dir
+D:/sfml-2d/out/build/x64-Release/CMakeFiles/edit_cache.dir
+D:/sfml-2d/out/build/x64-Release/CMakeFiles/rebuild_cache.dir
