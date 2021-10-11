@@ -1,3 +1,5 @@
 # ninja log v5
 0	601	650036881	CMakeFiles/sfml-2d.dir/sfml-2d.cpp.obj	de81a31ed9876af3
 602	1900	650036882	sfml-2d.exe	ea8f5e6489098240
+1	533	650038778	CMakeFiles/sfml-2d.dir/core/window.cpp.obj	d686734ae479bbe0
+533	1074	650038778	sfml-2d.exe	37d90a8ce6676a7b

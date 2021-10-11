@@ -5,8 +5,11 @@ cmake_minimum_required (VERSION 3.8)
 
 project ("sfml-2d")
 
+add_subdirectory(src)
+add_executable(sfml-2d "sfml-2d.cpp" "sfml-2d.h")
+
 # Add source to this project's executable.
-add_executable (sfml-2d "sfml-2d.cpp" "sfml-2d.h")
+target_link_libraries(sfml-2d box2d-lib)
 
 # TODO: Add tests and install targets if needed.
 target_link_libraries (sfml-2d 
@@ -17,7 +20,7 @@ target_link_libraries (sfml-2d
 	${CMAKE_SOURCE_DIR}/library/sfml-window.lib
 )
 
-include_directories (${CMAKE_SOURCE_DIR}/include)
+#include_directories (${CMAKE_SOURCE_DIR}/include)
 
 set_property (TARGET sfml-2d PROPERTY CXX_STANDARD 17)
 set_property (TARGET sfml-2d PROPERTY CX__STANDARD)

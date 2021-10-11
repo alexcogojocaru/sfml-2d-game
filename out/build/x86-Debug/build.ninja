@@ -51,6 +51,14 @@ build CMakeFiles\sfml-2d.dir\sfml-2d.cpp.obj: CXX_COMPILER__sfml-2d_Debug ..\..\
   TARGET_COMPILE_PDB = CMakeFiles\sfml-2d.dir\
   TARGET_PDB = sfml-2d.pdb
 
+build CMakeFiles\sfml-2d.dir\core\window.cpp.obj: CXX_COMPILER__sfml-2d_Debug ..\..\..\core\window.cpp || cmake_object_order_depends_target_sfml-2d
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -I..\..\..\include
+  OBJECT_DIR = CMakeFiles\sfml-2d.dir
+  OBJECT_FILE_DIR = CMakeFiles\sfml-2d.dir\core
+  TARGET_COMPILE_PDB = CMakeFiles\sfml-2d.dir\
+  TARGET_PDB = sfml-2d.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target sfml-2d
@@ -59,7 +67,7 @@ build CMakeFiles\sfml-2d.dir\sfml-2d.cpp.obj: CXX_COMPILER__sfml-2d_Debug ..\..\
 #############################################
 # Link the executable sfml-2d.exe
 
-build sfml-2d.exe: CXX_EXECUTABLE_LINKER__sfml-2d_Debug CMakeFiles\sfml-2d.dir\sfml-2d.cpp.obj | ..\..\..\library\sfml-graphics.lib ..\..\..\library\sfml-audio.lib ..\..\..\library\sfml-network.lib ..\..\..\library\sfml-system.lib ..\..\..\library\sfml-window.lib
+build sfml-2d.exe: CXX_EXECUTABLE_LINKER__sfml-2d_Debug CMakeFiles\sfml-2d.dir\sfml-2d.cpp.obj CMakeFiles\sfml-2d.dir\core\window.cpp.obj | ..\..\..\library\sfml-graphics.lib ..\..\..\library\sfml-audio.lib ..\..\..\library\sfml-network.lib ..\..\..\library\sfml-system.lib ..\..\..\library\sfml-window.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = ..\..\..\library\sfml-graphics.lib  ..\..\..\library\sfml-audio.lib  ..\..\..\library\sfml-network.lib  ..\..\..\library\sfml-system.lib  ..\..\..\library\sfml-window.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

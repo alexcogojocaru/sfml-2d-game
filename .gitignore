@@ -12,12 +12,11 @@
 CMakeSettings.json
 
 # User-specific folders
-include/
-library/
-out/
+
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+out/
 
 # Build results
 [Dd]ebug/

@@ -1,3 +1,6 @@
 D:/sfml-2d/out/build/x86-Release/CMakeFiles/sfml-2d.dir
 D:/sfml-2d/out/build/x86-Release/CMakeFiles/edit_cache.dir
 D:/sfml-2d/out/build/x86-Release/CMakeFiles/rebuild_cache.dir
+D:/sfml-2d/out/build/x86-Release/src/CMakeFiles/box2d-lib.dir
+D:/sfml-2d/out/build/x86-Release/src/CMakeFiles/edit_cache.dir
+D:/sfml-2d/out/build/x86-Release/src/CMakeFiles/rebuild_cache.dir

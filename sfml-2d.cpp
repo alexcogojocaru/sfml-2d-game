@@ -2,31 +2,16 @@
 //
 
 #include <SFML/Graphics.hpp>
+#include <box2d/box2d.h>
 
 using namespace std;
 
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(800, 600), "SFML Window");
-	sf::CircleShape shape(50.0f);
 
-	shape.setFillColor(sf::Color::Magenta);
-	while (window.isOpen())
-	{
-		sf::Event event_;
-
-		while (window.pollEvent(event_))
-		{
-			if (event_.type == sf::Event::Closed)
-			{
-				window.close();
-			}
-		}
-
-		window.clear();
-		window.draw(shape);
-		window.display();
-	}
+	b2Vec2 gravity(0, 0);
+	b2World world(gravity);
 
 	return 0;
 }
